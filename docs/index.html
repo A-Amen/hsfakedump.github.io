@@ -8,7 +8,7 @@
         
         for (let file of data) {
           var link = `<li><a href="${file.path}">${file.name}</a></li>`
-          link.replace("docs/","")
+          link = link.replace("docs/","")
           htmlString += link;
         }
 
